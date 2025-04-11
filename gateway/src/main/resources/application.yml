@@ -1,0 +1,15 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: core-service-books-route
+          uri: http://localhost:5000
+          predicates:
+            - Path=/api/books/**
+          filters:
+            - StripPrefix=1

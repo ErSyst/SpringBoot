@@ -1,0 +1,19 @@
+# Compiled code
+target/
+build/
+out/
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# Log files
+*.log
+
+# Packaged files
+*.jar
+*.war
+
+# Other
+.DS_Store
